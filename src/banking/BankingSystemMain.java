@@ -3,11 +3,7 @@ package banking;
 import java.util.Scanner;
 
 public class BankingSystemMain {
-	static final int MAKE =1;
-	static final int DEPOSIT=2;
-	static final int WITHDRAW=3;
-	static final int INQUIRE=4;
-	static final int EXIT=5;
+	
 	
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
@@ -37,7 +33,8 @@ public class BankingSystemMain {
 			System.out.println("프로그램을종료합니다");
 			return;
 			default:
-			System.out.println("잘못된선택입니다");
+			System.out.println("메뉴 입력 예외발생됨.");
+			System.out.println("메뉴는 1~5사이의 정수를 입력하세요");
 		}
 	}	
 }

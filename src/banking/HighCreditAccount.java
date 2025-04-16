@@ -25,9 +25,11 @@ public class HighCreditAccount extends NormalAccount {
 				System.out.println("잘못된신용등급입니다.");
 				return;
 		}
-		int totalInterest = super.getInterestRate() + additionalRate;
+		int totalInterestRate = super.getInterestRate()	+ additionalRate;
+		int interestAmount = (int) Math.floor(balance * totalInterestRate / 100.0);
+		balance += interestAmount;
+		System.out.println("이자 적용 후 잔액:" + balance);
 		
-		int interestAmount = (balance * totalInterest) / 100;
 		}
 		@Override
 		public void showAccountInfo() {

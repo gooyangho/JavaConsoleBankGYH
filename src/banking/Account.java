@@ -14,6 +14,12 @@ public class Account {
 	    this.interestRate = interestRate;
     }
     
+    public String getName() {
+    	return name;
+    }
+    public int getBalance() {
+    	return balance;
+    }
     public String getAccountNumber() {
 	    return accountNumber;
     }
@@ -25,7 +31,7 @@ public class Account {
     public void withdraw(int amount) {
 	    balance -= amount;
     }
-
+    
 	public void showAccountInfo() {
 	    System.out.println("계좌번호: " + accountNumber);
 	    System.out.println("이름: " + name);

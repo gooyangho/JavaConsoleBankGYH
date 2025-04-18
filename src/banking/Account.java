@@ -7,7 +7,7 @@ public class Account {
     protected int balance;
     protected double interestRate;
 
-    public Account(String accountNumber, String name, int balance) {
+    public Account(String accountNumber, String name, int balance,double interestRate) {
 	    this.accountNumber = accountNumber;
 	    this.name = name;
 	    this.balance = balance;
@@ -36,7 +36,7 @@ public class Account {
 	    System.out.println("계좌번호: " + accountNumber);
 	    System.out.println("이름: " + name);
 	    System.out.println("잔액: " + balance);
-	    System.out.println();
+	   
 	}
 }
 
